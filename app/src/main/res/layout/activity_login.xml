@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/toolbar"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Login here!"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:paddingTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/email"
+            app:met_floatingLabel="highlight"
+            android:textColor="@color/colorPrimaryDark"
+            android:hint="Email"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            app:met_floatingLabel="highlight"
+            android:textColor="@color/colorPrimaryDark"
+            android:hint="Password"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginbutton"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimaryLight"
+            android:layout_marginTop="15dp"
+            android:text="LOGIN"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget Password"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="end"
+            android:id="@+id/forgetpassord"/>
+    </LinearLayout>
+
+</RelativeLayout>
